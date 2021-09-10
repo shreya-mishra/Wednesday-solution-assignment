@@ -20,6 +20,15 @@
     "initialize": "git checkout --orphan temp-branch && git add -A && git commit -m 'Initial commit' && git branch -D master && git branch -m master",
     "build-android": "cd android && ./gradlew assembleRelease"
   },
+  "expo": {
+    "name": "react-native-template",
+    "version": "1.0.0",
+    "slug": "your-app-slug",
+    "android": {
+      "package": "com.yourcompany.react-native-template",
+      "versionCode": 1
+    }
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -54,7 +63,7 @@
     "immer": "^4.0.0",
     "immutable": "^4.0.0-rc.12",
     "intl": "1.2.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "map-keys-deep": "^0.0.2",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
@@ -65,10 +74,13 @@
     "react-native-reanimated": "^2.2.0",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^3.4.0",
+    "react-native-sound": "^0.11.0",
+    "react-native-track-player": "^1.2.7",
     "react-native-web": "~0.13.12",
     "react-redux": "^6.0.1",
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.1",
+    "redux-devtools": "^3.7.0",
     "redux-persist": "^6.0.0",
     "redux-persist-transform-immutable": "^5.0.0",
     "redux-saga": "^1.0.2",
